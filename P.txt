@@ -1,0 +1,30 @@
+[Pointers]
+
+Address in C:If you have a variable var in your program, &var will give you its address in the memory.
+
+C Pointers:
+Pointers (pointer variables) are special variables that are used to store addresses rather than values.
+
+Pointer Syntax:
+```int* p;```
+
+Get Value of Thing Pointed by Pointers:
+To get the value of the thing pointed by the pointers, we use the * operator. 
+ * is called the dereference operator (when working with pointers). It operates on a pointer and gives the value stored in that pointer.
+
+Pointer and Array:
+Basically, &x[i] is equivalent to x+i and x[i] is equivalent to *(x+i).
+
+Call by Reference: Using pointers
+-In C programming, it is also possible to pass addresses as arguments to functions.
+ To accept these addresses in the function definition, we can use pointers. It's because pointers are used to store addresses.
+
+C malloc():
+The name "malloc" stands for memory allocation.
+The malloc() function reserves a block of memory of the specified number of bytes. And, it returns a pointer of void which can be casted into pointers of any form.
+Syntax:   ptr = (castType*) malloc(size);    (the pointer ptr holds the address of the first byte in the allocated memory.)
+
+free():
+Dynamically allocated memory created with either calloc() or malloc() doesn't get freed on their own. You must explicitly use free() to release the space.
+Syntax:   free(ptr);       (This statement frees the space allocated in the memory pointed by ptr.)
+_
