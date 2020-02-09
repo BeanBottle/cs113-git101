@@ -1,0 +1,73 @@
+[Linked list]
+
+structure: a collection of variables (can be of different types) under a single name.
+
+Syntax of struct:
+	struct structureName 
+	{
+   	 dataType member1;
+   	 dataType member2;
+   	 ...
+	};
+
+Access members of a structure:
+- There are two types of operators used for accessing members of a structure.
+. is Member operator
+-> is Structure pointer operator 
+
+Keyword typedef:
+- We use the typedef keyword to create an alias name for data types. It is commonly used with structures to simplify the syntax of declaring variables.
+
+Nested Structures
+You can create structures within a structure in C programming.
+For example,
+
+struct complex
+{
+ int imag;
+ float real;
+};
+
+struct number
+{
+   struct complex comp;
+   int integers;
+} num1, num2;
+
+Linked list: a series of connected "nodes" that contains the "address" of the next node. Each node can store a data point which may be a number, a string or any other type of data.
+
+First node = Head
+another node = A data item, An address of another node
+
+Doubly linked list: We add a pointer to the previous node in a doubly-linked list. Thus, we can go in either direction: forward or backward.
+
+Circular Linked List: A circular linked list is a variation of linked list in which the last element is linked to the first element. This forms a circular loop.
+
+-A circular linked list can be either singly linked or doubly linked.
+-for singly linked list, next pointer of last item points to the first item
+-In doubly linked list, prev pointer of first item points to last item as well.
+
+linked list operation:
+-Add to beginning
+	Allocate memory for new node
+	Store data
+	Change next of new node to point to head
+	Change head to point to recently created node
+-Add to end
+	Allocate memory for new node
+	Store data
+	Traverse to last node
+	Change next of last node to recently created node
+-Add to specific node
+	Allocate memory and store data for new node
+	Traverse to node just before the required position of new node
+	Change next pointers to include new node in between
+-Delete from beginning
+	Point head to the second node
+-Delete from end
+	Traverse to second last element
+	Change its next pointer to null
+-Delete from middle
+	Traverse to element before the element to be deleted
+	Change next pointers to exclude the node from the chain
+
