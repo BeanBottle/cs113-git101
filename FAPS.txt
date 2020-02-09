@@ -1,0 +1,26 @@
+[Functions and Program Structure]
+
+-Function Prototype
+```returnType functionName(type1 argument1, type2 argument2, ...);```
+
+-Syntax of function call
+```functionName(argument1, argument2, ...);```
+
+-Function Definition
+```returnType functionName(type1 argument1, type2 argument2, ...)
+{
+    //body of the function
+}```
+
+Return Statement: The return statement terminates the execution of a function and returns a value to the calling function. The program control is transferred to the calling function after the return statement.
+
+-Syntax of return statement
+```return (expression);```
+
+Recursive: A function that calls itself is known as a recursive function. And, this technique is known as recursion.
+
+Variable Scope:
+local - in block
+global = in file
+
+Stack: A call stack is used for several related purposes, but the main reason for having one is to keep track of the point to which each active subroutine should return control when it finishes executing. An active subroutine is one that has been called, but is yet to complete execution, after which control should be handed back to the point of call. Such activations of subroutines may be nested to any level (recursive as a special case), hence the stack structure
