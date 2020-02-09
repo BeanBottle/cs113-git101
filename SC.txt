@@ -1,0 +1,19 @@
+[Storage Class]
+
+There are 4 types of storage class:
+-automatic
+-external
+-static
+-register
+
+register - The register keyword is used to declare register variables. Register variables were supposed to be faster than local variables.
+	   However, modern compilers are very good at code optimization, and there is a rare chance that using register variables will make your program faster.
+
+static - A static variable is declared by using the static keyword. 
+For example: ```static int i;```
+
+** The value of a static variable persists until the end of the program.
+
+external - Variables that are declared outside of all functions are known as external or global variables. They are accessible from any function inside the program.
+
+automatic - The variables declared inside a block are automatic or local variables. The local variables exist only inside the block in which it is declared.
