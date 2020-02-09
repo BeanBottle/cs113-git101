@@ -1,0 +1,42 @@
+[Types, Operators and Expressions]
+
+
+Variables and constants are the basic data objects manipulated in a program. 
+
+** Declarations list the variables to be used, and state what type they have and perhaps what their initial values are.
+
+Rules for naming a variable:
+-A variable name can have only letters (both uppercase and lowercase letters), digits and underscore.
+-The first letter of a variable should be either a letter or an underscore.
+-There is no rule on how long a variable name (identifier) can be. However, you may run into problems in some compilers if the variable name is longer than 31 characters.
+
+Format Specifier:
+-int			%d
+-char			%c
+-float			%f
+-double			%lf
+-short int		%hd
+-unsigned int		%u
+-long int		%li
+-long long int		%lli
+-unsigned long int	%lu
+-unsigned long long int	%llu
+-signed char		%c
+-unsigned char		%c
+-long double		%Lf
+
+C I/O :
+-All valid C programs must contain the main() function. 
+-The code execution begins from the start of the main() function.
+-The printf() is a library function to send formatted output to the screen. 
+-The function prints the string inside quotations.
+-To use printf() in our program, we need to include stdio.h header file using the #include <stdio.h> statement.
+-The return 0; statement inside the main() function is the "Exit status" of the program. It's optional.
+
+Operators:
+-specify what is to be done to variables.
+
+Expression:
+-combine variables and constants to produce new values.
+
+
