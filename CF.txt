@@ -1,0 +1,40 @@
+[Control Flow]
+
+-An expression such as x = 0 or i++ or printf(...) becomes a statement when it is followed by a
+semicolon.
+
+-In C, the semicolon is a statement terminator, rather than a separator as it is in languages like Pascal. 
+
+-The if-else statement is used to express decisions. Formally the syntax is
+ ```if (expression)
+ statement1
+ else
+ statement2```
+
+-The switch statement is a multi-way decision that tests whether an expression matches one of a
+number of constant integer values, and branches accordingly.
+ ```switch (expression) {
+ case const-expr: statements
+ case const-expr: statements
+ default: statements
+ }```
+
+-While loop
+```while (expression)
+ statement```
+
+-For loop
+```for (expr1; expr2; expr3)
+ statement```
+
+-Do-while loop
+```do
+ statement
+ while (expression);```
+
+break:The
+break statement provides an early exit from for, while, and do, just as from switch. 
+** A break causes the innermost enclosing loop or switch to be exited immediately. 
+
+continue: The continue statement is often used when the part of the loop that follows is complicated, so that
+reversing a test and indenting another level would nest the program too deeply
