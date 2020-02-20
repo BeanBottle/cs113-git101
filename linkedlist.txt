@@ -1,0 +1,77 @@
+// 6210406661 Varitpat Pattanawanichapohn 
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct node
+{
+    int num;
+    struct node *next;
+} node;
+
+void printNum(node *head)
+{
+    while (head)
+    {
+        printf("%d\n", head->num);
+        head = head->next;
+    }
+}
+
+void sortNum(node **head, int data)
+{
+    node *newNode = malloc(sizeof(node));
+    node *cur = *head; // current node
+    node *prev = cur;
+    newNode->num = data;
+
+    if (*head == NULL)
+    {
+        newNode->next = NULL;
+        *head = newNode;
+        return;
+    }
+
+    for (int i = 0; cur; i++)
+    {
+        if (cur->num >= newNode->num) 
+        {
+            if (i == 0) 
+            {
+                newNode->next = cur;
+                *head = newNode;
+                return;
+            }
+            if (cur->next == NULL || i > 0) 
+            {
+                prev->next = newNode;
+                newNode->next = cur;
+                return;
+            }
+        }
+        
+        if (cur->num < newNode->num && cur->next == NULL) 
+        {
+            cur->next = newNode;
+            newNode->next = NULL;
+            return;
+        }
+        prev = cur;
+        cur = cur->next;
+    }
+}
+
+int main()
+{
+    int input;
+    node *head = NULL;
+
+    while (1)
+    {
+        scanf("%d", &input);
+        if (input == -1)
+            break;
+        sortNum(&head, input);
+    }
+
+    printNum(head);
+}
