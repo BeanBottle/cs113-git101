@@ -1,0 +1,23 @@
+Git branch
+
+
+Benefits of Branch:
+Branches are used to separate different tasks
+● Separate your work from the work of others
+● When working on fixes or new features, do that in a separate branch
+● Good for experiments, big reworks etc
+● Generally the master branch should contain the latest stable version
+● When a fix/feature is ready and tested, merge into master
+
+Adding new branch - $ git branch newbranch (create "newbranch")
+Switching branch - $ git checkout newbranch (move to "newbranch")
+Pushing branch to remote repository - $  git push <remote> <branch>
+
+
+Merging
+● Branches can be “merged” back into the master branch
+● This is how a commit can have more than one parent commit
+
+Merging branch - $ git merge newbranch (merge "newbranch" to current branch)
+*Conflict - when people make different changes to the same line of the same file,
+            or when one person edits a file and another person deletes the same file.
